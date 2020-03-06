@@ -12,27 +12,26 @@
                 </ul>
                 <ul class="side-nav" id="mobile-menu">
                     <li><a href="{{url_for('index')}}">Home</a></li>
-                    <li><a href="">Adoption</a></li>
-                    <li><a href="">Services</a></li>
+                    <li><a href="">Bio</a></li>
+                    <li><a href=""></a></li>
                     <li><a href="">Stores</a></li> 
-<i class="row register-box show-on-medium-and-down">
                         {% if not session['is_staff'] %}
-                            <a href="{{url_for('register')}}" class="col s12 btn waves-effect nav-action-button" aria-label="Go to register page">
+                            <a href="" class="col s12 btn waves-effect nav-action-button" aria-label="Go to register page">
                                 <i class="material-icons btn-icon">person_add</i>
                                 Register
                             </a>
-                            <a href="{{url_for('user_login')}}" class="col s12 btn waves-effect nav-action-button" aria-label="Go to login page">
+                            <a href="" class="col s12 btn waves-effect nav-action-button" aria-label="Go to login page">
                                 <i class="material-icons btn-icon">person</i>
                                 Login
                             </a>
                         {% endif %}
 
                         {% if session['is_staff'] %}     
-                            <a href="{{url_for('get_dashboard')}}" class="col s12 btn waves-effect nav-action-button" aria-label="Go to my dashboard">
+                            <a href="" class="col s12 btn waves-effect nav-action-button" aria-label="Go to my dashboard">
                                 <i class="material-icons btn-icon">settings</i>
                                 Dashboard
                             </a>
-                            <a href="{{url_for('user_logout')}}" class="col s12 btn waves-effect nav-action-button" aria-label="Logout">
+                            <a href="" class="col s12 btn waves-effect nav-action-button" aria-label="Logout">
                                 <i class="material-icons btn-icon">power_settings_new</i>
                                 Logout
                             </a>
@@ -42,7 +41,7 @@
             </div>
             <div class="col s4 logo-box">
                 <img src="./static/images/paw-logo.jpg" alt="Pawer Logo">
-                <a class="pawer-logo-name" href="{{url_for('user_home')}}" >PAWER</a>
+                <a class="pawer-logo-name" href="" >PAWER</a>
                 <div class="three-words">
                     <p>|ADOPTION</p>
                     <p>|SERVICES</p>
@@ -51,21 +50,21 @@
             </div>
             <div class="col s4 register-box hide-on-med-and-down">
             {% if not session['is_staff'] %}
-                <a href="{{url_for('register')}}" class="btn waves-effect nav-action-button" aria-label="Go to register page">
+                <a href="" class="btn waves-effect nav-action-button" aria-label="Go to register page">
                     <i class="material-icons btn-icon">person_add</i>
                     Register
                 </a>
-                <a href="{{url_for('user_login')}}" class="btn waves-effect nav-action-button" aria-label="Go to login page">
+                <a href="" class="btn waves-effect nav-action-button" aria-label="Go to login page">
                     <i class="material-icons btn-icon">person</i>
                     Login
                 </a>
             {% endif %}
             {% if session['is_staff'] %}     
-                <a href="{{url_for('get_dashboard')}}" class="btn waves-effect nav-action-button" aria-label="Go to my dashboard">
+                <a href="" class="btn waves-effect nav-action-button" aria-label="Go to my dashboard">
                     <i class="material-icons btn-icon">settings</i>
                     Dashboard
                 </a>
-                <a href="{{url_for('user_logout')}}" class="btn waves-effect nav-action-button" aria-label="Logout">
+                <a href="" class="btn waves-effect nav-action-button" aria-label="Logout">
                     <i class="material-icons btn-icon">power_settings_new</i>
                     Logout
                 </a>
