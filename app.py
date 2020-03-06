@@ -26,13 +26,18 @@ def cs_work():
     return render_template('pages/cs_work.html')
 
 
+@APP.route('/carol_shaw_work')
+def cs_game():
+    """ Main page where users can choose where to go"""
+    return render_template('pages/cs_game.html')
+
 @APP.route('/gender_equality')
 def equality():
     """ Main page where users can choose where to go"""
     return render_template('pages/equality.html')
 
-
 if __name__ == '__main__':
     APP.run(host=os.environ.get('IP'),
             port=os.environ.get('PORT'),
-            debug=True)
+            debug=True) 
+
