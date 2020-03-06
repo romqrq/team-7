@@ -5,70 +5,22 @@
                 <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons menu-icon">menu</i></a>
                 <ul id="nav-mobile" class="hide-on-med-and-down">
                     <li><a href="{{url_for('index')}}">Home</a></li>
-                    <li><a href="">Adoption</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Stores</a></li> 
+                    <li><a href="{{url_for('cs_bio')}}">Carol Shaw</a></li>
+                    <li><a href="{{url_for('cs_work')}}">Games</a></li>
+                    <li><a href="{{url_for('equality')}}">Equality</a></li> 
             
                 </ul>
                 <ul class="side-nav" id="mobile-menu">
                     <li><a href="{{url_for('index')}}">Home</a></li>
-                    <li><a href="">Bio</a></li>
-                    <li><a href=""></a></li>
-                    <li><a href="">Stores</a></li> 
-                        {% if not session['is_staff'] %}
-                            <a href="" class="col s12 btn waves-effect nav-action-button" aria-label="Go to register page">
-                                <i class="material-icons btn-icon">person_add</i>
-                                Register
-                            </a>
-                            <a href="" class="col s12 btn waves-effect nav-action-button" aria-label="Go to login page">
-                                <i class="material-icons btn-icon">person</i>
-                                Login
-                            </a>
-                        {% endif %}
-
-                        {% if session['is_staff'] %}     
-                            <a href="" class="col s12 btn waves-effect nav-action-button" aria-label="Go to my dashboard">
-                                <i class="material-icons btn-icon">settings</i>
-                                Dashboard
-                            </a>
-                            <a href="" class="col s12 btn waves-effect nav-action-button" aria-label="Logout">
-                                <i class="material-icons btn-icon">power_settings_new</i>
-                                Logout
-                            </a>
-                        {% endif %}
-                    </li>
+                    <li><a href="{{url_for('cs_bio')}}">Carol Shaw</a></li>
+                    <li><a href="{{url_for('cs_work')}}">Games</a></li>
+                    <li><a href="{{url_for('equality')}}">Equality</a></li> 
                 </ul>
             </div>
             <div class="col s4 logo-box">
-                <img src="./static/images/paw-logo.jpg" alt="Pawer Logo">
-                <a class="pawer-logo-name" href="" >PAWER</a>
-                <div class="three-words">
-                    <p>|ADOPTION</p>
-                    <p>|SERVICES</p>
-                    <p>|STORES</p>
-                </div>
+                <a class="header-text logo-name" href="" >Carol Shaw</a>
             </div>
-            <div class="col s4 register-box hide-on-med-and-down">
-            {% if not session['is_staff'] %}
-                <a href="" class="btn waves-effect nav-action-button" aria-label="Go to register page">
-                    <i class="material-icons btn-icon">person_add</i>
-                    Register
-                </a>
-                <a href="" class="btn waves-effect nav-action-button" aria-label="Go to login page">
-                    <i class="material-icons btn-icon">person</i>
-                    Login
-                </a>
-            {% endif %}
-            {% if session['is_staff'] %}     
-                <a href="" class="btn waves-effect nav-action-button" aria-label="Go to my dashboard">
-                    <i class="material-icons btn-icon">settings</i>
-                    Dashboard
-                </a>
-                <a href="" class="btn waves-effect nav-action-button" aria-label="Logout">
-                    <i class="material-icons btn-icon">power_settings_new</i>
-                    Logout
-                </a>
-            {% endif %}
+            <div class="col s4">
             </div>
         </div>
     </nav>

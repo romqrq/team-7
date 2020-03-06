@@ -3,7 +3,7 @@
 $yellow-color: #FFD85B;
 $red-color: #DD565F;
 $black-color: #424242;
-$blue-color: #5185FF;
+$blue-color: #426CCE;
 $white-color: #E6E8E6;
 
 
@@ -28,6 +28,18 @@ body {
 
 /* Header */
 
-.nav .nav-wrapper {
-    background-color: #424242;
+.nav-wrapper {
+    background-color: #426CCE;
+}
+
+.logo-name {
+    color: #FFD85B;
+    text-shadow: -1px 2px 5px black;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.menu-icon{
+    color: #FFD85B;
+    text-shadow: -1px 2px 5px black;
 }
