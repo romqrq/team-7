@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans|Roboto&display=swap');
+
+$yellow-color: #FFD85B;
+$red-color: #DD565F;
+$black-color: #424242;
+$blue-color: #5185FF;
+$white-color: #E6E8E6;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header-text{
+    font-family: "Ferdoka One", sans-serif;
+    font-size: 2rem;
+}
+
+.secondary-text{
+    font-family: "Josefin Sans", sans-serif;
+}
