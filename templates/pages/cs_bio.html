@@ -1,0 +1,48 @@
+{% extends 'layout/base.html' %}
+{% block content %}
+		
+<div class="parallax-container">
+    <div class="parallax"><img src="/static/images/pup-basket.jpg" alt="Puppy in a basket"></div>
+</div>
+<div class="section white">
+    <div class="row container">
+
+        {% include 'layout/user-feedback-message.html' %}
+        
+        <h2 class="heading-text">Who is Carol Shaw?</h2>
+        <p class="secondary-text">secondary text</p>
+        <p>text</p>
+        <p>text</h4>
+        <a href="{{url_for('get_dogs')}}" class="col s12 m4 offset-m4 btn waves-effect secondary-text index-action-button" aria-label="Go to adoptions page">
+            <i class="material-icons">pets</i>
+            Bio
+        </a>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="/static/images/dog-training.jpg" alt="Dog running agility"></div>
+</div>
+<div class="section white">
+    <div class="row container">
+        <h2 class="heading-text">Carol Shaw work</h2>
+        <p class="secondary-text">secondary text</h4>
+        <a href="{{url_for('cs_work')}}" class="col s12 m4 offset-m4 btn waves-effect secondary-text index-action-button"aria-label="Go to services page">
+            <i class="material-icons">supervisor_account</i>
+            CS WORK
+        </a>
+    </div>
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="/static/images/pet-store.jpg" alt="Photo of a petshop"></div>
+</div>
+<div class="section white">
+    <div class="row container">
+        <h2 class="heading-text">Gender equality</h2>
+        <p class="secondary-text">secondatry text</h4>
+        <a href="{{url_for('gender_equality')}}" class="col s12 m4 offset-m4 btn waves-effect secondary-text index-action-button" aria-label="Go to stores page">
+            <i class="material-icons">shopping_cart</i>
+            Equality
+        </a>
+    </div>
+</div>
+{% endblock %}
