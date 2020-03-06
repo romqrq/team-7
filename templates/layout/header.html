@@ -4,19 +4,18 @@
             <div class="col s4 menu-box">
                 <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons menu-icon">menu</i></a>
                 <ul id="nav-mobile" class="hide-on-med-and-down">
-                    <li><a href="{{url_for('user_home')}}">Home</a></li>
-                    <li><a href="{{url_for('get_dogs')}}">Adoption</a></li>
-                    <li><a href="{{url_for('get_services')}}">Services</a></li>
-                    <li><a href="{{url_for('get_stores')}}">Stores</a></li> 
+                    <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="">Adoption</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Stores</a></li> 
             
                 </ul>
                 <ul class="side-nav" id="mobile-menu">
                     <li><a href="{{url_for('index')}}">Home</a></li>
-                    <li><a href="{{url_for('get_dogs')}}">Adoption</a></li>
-                    <li><a href="{{url_for('get_services')}}">Services</a></li>
-                    <li><a href="{{url_for('get_stores')}}">Stores</a></li> 
-
-                    <li class="row register-box show-on-medium-and-down">
+                    <li><a href="">Adoption</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Stores</a></li> 
+<i class="row register-box show-on-medium-and-down">
                         {% if not session['is_staff'] %}
                             <a href="{{url_for('register')}}" class="col s12 btn waves-effect nav-action-button" aria-label="Go to register page">
                                 <i class="material-icons btn-icon">person_add</i>
