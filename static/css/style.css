@@ -25,3 +25,9 @@ body {
 .secondary-text{
     font-family: "Josefin Sans", sans-serif;
 }
+
+/* Header */
+
+.nav .nav-wrapper {
+    background-color: #424242;
+}
