@@ -9,9 +9,27 @@ APP.secret_key = "HackathonSecret7"
 
 
 @APP.route('/')
-def user_home():
+def index():
     """ Main page where users can choose where to go"""
     return render_template('pages/index.html')
+
+
+@APP.route('/carol_shaw_bio')
+def cs_bio():
+    """ Main page where users can choose where to go"""
+    return render_template('pages/cs_bio.html')
+
+
+@APP.route('/carol_shaw_work')
+def cs_work():
+    """ Main page where users can choose where to go"""
+    return render_template('pages/cs_work.html')
+
+
+@APP.route('/gender_equality')
+def equality():
+    """ Main page where users can choose where to go"""
+    return render_template('pages/equality.html')
 
 
 if __name__ == '__main__':
